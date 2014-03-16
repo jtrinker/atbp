@@ -3,3 +3,13 @@
 Rails App using PostgreSQL, Ruby 2.1.0, Rails 4.0.4, Foundation 5
 
 Deleted terrible turbolinks
+
+== SETUP
+
+1. git clone https://github.com/jtrinker/atbp.git
+2. Add secret_token.rb
+3. bundle install
+4. Create Postgres role: createuser -s -r atbp
+5. Create database: rake db:create:all
+6. Start postgres: I recommend downloading postgres app
+
