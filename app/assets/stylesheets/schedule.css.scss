@@ -1,0 +1,19 @@
+$black: #19201e;
+$red: #de4e3f;
+$gray: #25302d;
+
+
+.schedule-section {
+	background: $gray;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+.schedule-header {
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
