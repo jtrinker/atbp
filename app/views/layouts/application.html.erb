@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <title><%= content_for?(:title) ? yield(:title) : "Atbp" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Atbp" %>">
     <%= stylesheet_link_tag "application", media: "all" %>
@@ -12,11 +13,12 @@
   </head>
   <body>
     <header>
-      <!-- nav layout -->
-      <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
        <%= yield %>
-    </main>
+
+
+  <script>
+  jQuery("#responsive_headline").fitText(.5, { minFontSize: '160px' })
+  </script>
   </body>
 </html>
