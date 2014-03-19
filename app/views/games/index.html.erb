@@ -6,13 +6,7 @@
 		</div>
 
 		<div class="answer-wrap">
-				<h1 class="main-text" id="responsive_headline">
-					<% if first_game < Time.now %>
-						<%= render "yes_or_no" %>
-					<% else %>
-						<%= render "countdown" %>
-					<% end %>
-				</h1>
+				<h1 class="main-text" id="responsive_headline"><%= render "countdown_or_live" %></h1>
 				<p><%= @next_games %></p>
 		</div>
 </div>
