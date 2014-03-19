@@ -6,16 +6,15 @@
 		</div>
 
 		<div class="answer-wrap">
-				<h1 class="main-text" id="responsive_headline">YES!</h1>
+				<h1 class="main-text" id="responsive_headline">
+					<% if first_game < Time.now %>
+						<%= render "yes_or_no" %>
+					<% else %>
+						<%= render "countdown" %>
+					<% end %>
+				</h1>
+				<p><%= @next_games %></p>
 		</div>
-		<% if Time.now.strftime("%_m/%d")[1..-1] == @games.first.date.strftime("%_m/%d")[1..-1] %>
-			<% @todays_game = @games.shift %>
-			<P>YESSSS</p>
-			<p><%= @todays_game.date.strftime("%_m/%d")[1..-1] %> vs <%= @todays_game.opponent %></p>
-			<p><%= @games.inspect %>
-	    <% else	%>
-	    	<p>NO!</p>
-		<% end %>
 </div>
 
 <div data-equalizer>
