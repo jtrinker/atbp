@@ -1,5 +1,4 @@
 <% i = 0 %>
-<% x = 0 %>
 <% @games.each do |game| %>
 	<% if game.date.strftime("%_m/%d")[1..-1] == today %>
 		YES!
@@ -8,7 +7,6 @@
 		<% unless i == 1 %>
 		NO!
 		<% i = 1 %>
-		<% x = 1 %>
 		<%= next_game %>
 		<% end %>
 	<% end %>
