@@ -9,7 +9,11 @@ module GamesHelper
 	end
 
 	def next_game
-		puts "!"
+		seconds = @next_games[0].date - Time.now
+		minutes = seconds / 60
+		hours = minutes / 60
+		days = hours / 24
+		days.floor
 	end
 end
 
