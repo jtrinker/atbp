@@ -1,8 +1,8 @@
 == arethebaronsplaying.com
 
 Rails App using PostgreSQL, Ruby 2.1.0, Rails 4.0.4, Foundation 5
-
 Deleted terrible turbolinks
+Models: Game, Phrase
 
 == SETUP
 
