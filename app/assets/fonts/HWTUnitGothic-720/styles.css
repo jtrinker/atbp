@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'HWTUnitGothic-720';
+	src: url('HWTUnitGothic-720.eot?') format('eot'), 
+	     url('HWTUnitGothic-720.otf')  format('opentype'),
+	     url('HWTUnitGothic-720.woff') format('woff'), 
+	     url('HWTUnitGothic-720.ttf')  format('truetype'),
+	     url('HWTUnitGothic-720.svg#HWTUnitGothic-720') format('svg');
+}
