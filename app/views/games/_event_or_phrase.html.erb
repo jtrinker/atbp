@@ -1,0 +1,9 @@
+<% n = 0 %>
+<% games.each do |game| %>
+	<% if play_today(game) %>
+		<% unless n == 1 %>
+			<%= game.event || @phrase.line %>
+			<% n = 1 %>
+		<% end %>
+	<% end %>
+<% end %>	

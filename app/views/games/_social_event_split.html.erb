@@ -4,9 +4,7 @@
 				<div class="row container">
 					<div class="medium-12 columns">
 							<h3 class="event-header">today's event:</h3>
-							<h2 class="event-subheader">
-								<%= @phrase.line %>
-							</h2>
+							<h2 class="event-subheader"><%= render "event_or_phrase", games: games %></h2>
 					</div>
 			</div>
 		</div>

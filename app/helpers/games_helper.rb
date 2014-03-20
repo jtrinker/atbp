@@ -22,7 +22,7 @@ module GamesHelper
 	end
 
 	def play_today(game)
-		game.date == Date.today.strftime("%_m/%d")[1..-1] ? 'YES!' : 'NO.'
+		game.date == Date.today.strftime("%_m/%d")[1..-1]
 	end
 end
 
