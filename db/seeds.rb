@@ -75,4 +75,11 @@ Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: t
 # Game.create(id: 59, date: "6/03", time: "615PM", opponent: "Tennessee", away: true, event: nil)
 # Game.create(id: 60, date: "6/04", time: "1100AM", opponent: "Tennessee", away: true, event: nil)
 
-# puts "Done."
+Phrase.destroy_all
+
+Phrase.create(id: 1, line: "nothin' fancy. just sports")
+Phrase.create(id: 2, line: "all the sports")
+Phrase.create(id: 3, line: "beers, brats, balls")
+Phrase.create(id: 4, line: "homies and beer")
+Phrase.create(id: 5, line: "sunshine & balls. enjoy")
+
