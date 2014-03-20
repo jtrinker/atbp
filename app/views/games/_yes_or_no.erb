@@ -1,6 +1,6 @@
 <% i = 0 %>
-<% @games.each do |game| %>
-	<% if game.date.strftime("%_m/%d")[1..-1] == today %>
+<% games.each do |game| %>
+	<% if game.date.strftime("%_m/%d")[1..-1] == Time.now.strftime("%_m/%d")[1..-1] %>
 		<h1 class="main-text answer" id="responsive_headline">YES!</h1>
 		<% i = 1 %>
 		<br>

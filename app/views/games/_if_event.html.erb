@@ -1,0 +1,12 @@
+<% n = 0 %>
+<% games.each do |g| %>
+	<% if play_today(g) && !g.event.nil? %>
+		<% n = 1 %>
+		<%= render "social_event_split.html.erb", games: games %>
+	<% else %>
+		<% unless n == 1 %>
+			<%= render "social_whole.html.erb" %>
+			<% n = 1 %>
+		<% end %>
+	<% end %>
+<% end %>

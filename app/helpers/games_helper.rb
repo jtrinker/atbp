@@ -1,11 +1,8 @@
 module GamesHelper
-	def today
-		Time.now.strftime("%_m/%d")[1..-1]
-	end
 
 	def first_game
 		# Make sure to set to 3/28
-		Time.new(2014, 3, 16)
+		Time.new(2014, 3, 04)
 	end
 
 	def next_game
@@ -24,12 +21,8 @@ module GamesHelper
 		days.floor
 	end
 
-	def todays_game 
-		@games.each do |g|
-			if g.date.strftime("%_m/%d")[1..-1] == today
-				@todays_game = g
-			end
-		end
+	def play_today(game)
+		game.date == Date.today.strftime("%_m/%d")[1..-1] ? 'YES!' : 'NO.'
 	end
 end
 

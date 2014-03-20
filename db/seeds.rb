@@ -2,7 +2,7 @@ Game.destroy_all
 
 puts "Seeding data..."
 # Game Data
-Game.create(id: 1, date: "3/19", time: "7PM", opponent: "Chicago White Sox", away: false, event: "Thirsty Thursdays")
+Game.create(id: 1, date: "3/20", time: "7PM", opponent: "Chicago White Sox", away: false, event: "Thirsty Thursdays")
 Game.create(id: 2, date: "4/03", time: "705PM", opponent: "Montgomery", away: true, event: nil)
 Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Montgomery", away: true, event: nil)
 Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Montgomery", away: true, event: nil)

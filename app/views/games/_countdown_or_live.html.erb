@@ -1,5 +1,5 @@
 <% if first_game < Time.now %>
-	<%= render "yes_or_no" %>
+	<%= render "yes_or_no", games: games %>
 <% else %>
 	<%= render "countdown" %>
 <% end %>
