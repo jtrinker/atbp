@@ -10,7 +10,8 @@ $gray: #25302d;
 }
 
 .social-header {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'hamilton19';
+    letter-spacing: 3px;
 	color: white;
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -19,7 +20,8 @@ $gray: #25302d;
 
 
 .social-ul li {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'hamilton19';
+    letter-spacing: 3px;
 	line-height: 1;
 	color: white;
 	font-size: 6rem;
@@ -37,6 +39,32 @@ $gray: #25302d;
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'hamilton18';
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot');
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.woff') format('woff'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.svg#MonoSocialIconsFont') format('svg');
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'hamilton19';
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot');
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.woff') format('woff'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype'),
+         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.svg#MonoSocialIconsFont') format('svg');
+    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .symbol, a.symbol:before {
     font-family: 'Mono Social Icons Font';
@@ -56,4 +84,13 @@ a.symbol:before {
     content: attr(title);
     margin-right: 0.3em;
     font-size: 130%;
+}
+
+
+
+
+@media only screen and (max-width: 40.063em) {
+    .social-icon {
+        font-size: 4rem !important;
+    }
 }

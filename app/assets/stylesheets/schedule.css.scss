@@ -2,6 +2,17 @@ $black: #19201e;
 $red: #de4e3f;
 $gray: #25302d;
 
+.schedule-subgrid {
+	font-size: 2rem;
+}
+
+.schedule-subgrid li {
+	padding-bottom: 10px !important;
+}
+
+.middle-section-schedule {
+	text-align: left;
+}
 
 .schedule-section {
 	background: $gray;
@@ -13,7 +24,8 @@ $gray: #25302d;
 }
 
 .schedule-header {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'hamilton19';
+	letter-spacing: 3px;
 	color: $red;
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -41,4 +53,16 @@ $gray: #25302d;
 
 .time {
 	float: right;
+}
+
+.venue {
+	text-transform: lowercase;
+}
+
+
+
+@media only screen and (max-width: 40.063em) {
+	.schedule-subgrid {
+		font-size: 1rem;
+	}
 }
