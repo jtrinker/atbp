@@ -1,6 +1,6 @@
 # Atbp::Application.config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
-Atbp::Application.config.secret_token = if Rails.env.development? or Rails.env.test?
+Atbp::Application.config.secret_key_base = if Rails.env.development? or Rails.env.test?
   ('x' * 30) # meets minimum requirement of 30 chars long
 else
   ENV['SECRET_KEY_BASE']
