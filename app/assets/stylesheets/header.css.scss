@@ -16,14 +16,23 @@ $red: #de4e3f;
 	text-align: center;
 	width: 100%;
 	bottom: 20px;
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'hamilton19';
 	color: white !important;
+	display: table;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .main-text {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'hamilton19';
 	color: white;
 	text-transform: uppercase;
+	vertical-align: middle; 
+	text-align: center; 
+	width: 100%;
 }
 
 
@@ -31,6 +40,9 @@ $red: #de4e3f;
 	font-family: 'Oswald', sans-serif;
 	color: white;
 	text-transform: uppercase;
+	vertical-align: middle; 
+	text-align: center; 
+	width: 100%;
 }
 
 

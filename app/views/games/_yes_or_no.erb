@@ -3,6 +3,7 @@
 	<% if game.date.strftime("%_m/%d")[1..-1] == today %>
 		<h1 class="main-text answer" id="responsive_headline">YES!</h1>
 		<% i = 1 %>
+		<br>
 		<h2 class="main-text2 gamewrap" id="responsive_headline2">
 			<% if game.away == false %>
 				<span class="next-venue">vs.</span>
