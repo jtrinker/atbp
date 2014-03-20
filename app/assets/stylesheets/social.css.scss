@@ -43,24 +43,24 @@ $gray: #25302d;
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('MonoSocialIconsFont-1.10.eot');
-    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: asset_url('MonoSocialIconsFont-1.10.eot');
+    src: asset_url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         asset_url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         asset_url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         asset_url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: asset_url('MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'hamilton18';
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot');
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot?#iefix') format('embedded-opentype'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.woff') format('woff'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.svg#MonoSocialIconsFont') format('svg');
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot?#iefix') format('embedded-opentype'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.woff') format('woff'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.svg#MonoSocialIconsFont') format('svg');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -68,12 +68,12 @@ $gray: #25302d;
 
 @font-face {
     font-family: 'hamilton19';
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot');
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot?#iefix') format('embedded-opentype'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.woff') format('woff'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype'),
-         url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.svg#MonoSocialIconsFont') format('svg');
-    src: url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot?#iefix') format('embedded-opentype'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.woff') format('woff'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype'),
+         asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.svg#MonoSocialIconsFont') format('svg');
+    src: asset_url('hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
