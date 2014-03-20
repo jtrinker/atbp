@@ -11,18 +11,12 @@
 </div>
 
 <div data-equalizer>
-	<div class="large-6 columns largeleft" data-equalizer-watch>
-			<div class="event-section large-12 columns">
-					<div class="row container">
-							<div class="medium-12 columns">
-									<h3 class="event-header">today's event:</h3>
-									<h2 class="event-subheader">thirsty thursday</h2>
-							</div>
-					</div>
-			</div>
-		<%= render "social" %>
-	</div>
 
+	<% if @todays_game && @todays_game.event.nil? %>
+		<%= render "social_event_split" %>
+	<% else %>
+		<%= render "social_whole" %>
+	<% end %>
 
 	<div class="large-6 columns largeright" data-equalizer-watch>
 		<%= render "schedule" %>

@@ -23,5 +23,13 @@ module GamesHelper
 		days = hours / 24
 		days.floor
 	end
+
+	def todays_game 
+		@games.each do |g|
+			if g.date.strftime("%_m/%d")[1..-1] == today
+				@todays_game = g
+			end
+		end
+	end
 end
 

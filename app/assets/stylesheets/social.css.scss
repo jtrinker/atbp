@@ -2,7 +2,8 @@ $black: #19201e;
 $red: #de4e3f;
 $gray: #25302d;
 
-.social-section {
+.social-section,
+.social-section-full {
 	background: $red;
 	margin: 0px;
 	padding-top: 40px;
@@ -27,6 +28,18 @@ $gray: #25302d;
 	font-size: 6rem;
 	text-align: center;
 }
+
+
+.social-ul-full li {
+    font-family: 'hamilton19';
+    letter-spacing: 3px;
+    line-height: 1;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+}
+
+
 
 @font-face {
     font-family: 'Mono Social Icons Font';
