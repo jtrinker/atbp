@@ -12,13 +12,10 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-    </header>
        <%= yield %>
-
-
   <script>
-  jQuery("#responsive_headline").fitText(.5, { minFontSize: '160px' })
+  jQuery("#responsive_headline").fitText(.5, { minFontSize: '100px' });
+  jQuery("#responsive_headline2").fitText(2.7, { minFontSize: '30px' });
   </script>
   </body>
 </html>

@@ -1,0 +1,37 @@
+<% i = 0 %>
+<% @games.each do |game| %>
+	<% if game.date.strftime("%_m/%d")[1..-1] == today %>
+		<h1 class="main-text answer" id="responsive_headline">YES!</h1>
+		<% i = 1 %>
+		<br>
+		<h2 class="main-text2 gamewrap" id="responsive_headline2">
+			<% if game.away == false %>
+				<span class="next-venue">vs.</span>
+				<span class="next-opponent"><%= game.opponent %></span> |
+				<span class="next-time"><%= game.time %></span>
+			<% else %>
+				<span class="next-venue">at</span>
+				<span class="next-opponent"><%= game.opponent %></span> |
+				<span class="next-time"><%= game.time %></span>
+			<% end %>
+		</h2>
+	<% else %>
+		<% unless i == 1 %>
+		<h1 class="main-text answer" id="responsive_headline">NO.</h1>
+		<% i = 1 %>
+		<h2 class="main-text2 gamewrap" id="responsive_headline2">
+			<% if game.away == false %>
+				<span class="next-venue">vs.</span>
+				<span class="next-opponent"><%= game.opponent %></span>
+				in <%= next_game %> days |
+				<span class="next-time"><%= game.time %></span>
+			<% else %>
+				<span class="next-venue">at</span>
+				<span class="next-opponent"><%= game.opponent %></span>
+				in <%= next_game %> |
+				<span class="next-time"><%= game.time %></span>
+			<% end %>
+		</h2>
+		<% end %>
+	<% end %>
+<% end %>

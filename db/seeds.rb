@@ -1,25 +1,78 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Game.destroy_all
 
-# Ant.destroy_all
-# # Ant Data
-# argentine_ant = Ant.create( name: 'Argentine Ant', nodes: 1, size: 'Monomorphic workers, 1/8 in (3.5 mm) long', general_desc: 'sharp pointed beak', feeding_preference: 'Argentine ants prefer sweets such as honeydew, fruit juices and plant secretions but will also forage on proteins (meat, insects, eggs) and fats. They will even attack small, vulnerable animals.', nest_site: 'Argentine ant colonies live in moist areas near food sources. Colony numbers fluctuate seasonally, ranging from 100 to several hundred thousand workers and many queens. Foraging workers follow trails; winged queens can sometimes be found among them. Argentine ants live outdoors in shallow nests under boards and stones, beneath plants and along sidewalks. Argentine ants will also nest indoors.')
-# #black_carpenter_ant = Ant.create( name: 'Black Carpenter Ant', nodes: 1, size: 'poly - 7mm to 13mm', general_desc: 'large black ant')
-# #western_carpenter_ant = Ant.create( name: 'Western Carpenter Ant', nodes: 1, size: 'poly - 7mm to 13mm', general_desc: 'black body, reddish legs')
-# carpenter_ant = Ant.create( name: 'Carpenter Ant', nodes: 1, size: 'Polymorphic workers, 1/4 to 1/2 in (7-13 mm) long', general_desc: 'black head/abdomen with red thorax', feeding_preference: 'Carpenter ants feed primarily on insect honeydew, plant and fruit juices, and insects. Indoors, they feed on food debris, including sweets, eggs, meats, cakes, pet foods and grease.', nest_site: 'Moderately sized mature colonies contain more than 3,000 workers with one queen per colony. (Colonies may contain satellite nests that consist of workers, larvae and pupae; together with the main colony, the total population may exceed 15,000.) Nests usually originate in moist, decayed wood and voids and may later expand into sound wood. Look for coarse sawdust piles (frass) that contain insect body parts and listen for the sound produced as workers chew to remove wood to enlarge the nest. Outside, nests are commonly found in dead or damaged portions of trees, rotting logs and stumps.' )
-# crazy_ant = Ant.create( name: 'Crazy Ant', nodes: 1, size: 'Monomorphic workers, 1/16 to 1/8 in (2-3.5 mm) long', general_desc: 'very long antennae and legs', feeding_preference: 'Crazy ants prefer insects and sweets but will feed on any household food. Outside, their preferred diet includes insects, seeds, fruits and honeydew from aphids, mealybugs and scale insects.', nest_site: 'Crazy ants are noted for their erratic movements. They appear to be lost and confused. Colonies tend to be small, with up to 2,000 workers and eight to 40 queens. The presence of numerous interconnected colonies may result in larger infestations. Colonies may spontaneously abandon one nest site and move to another. Inside, crazy ants usually nest under floors and in wall voids, frequently near hot-water pipes and heaters. Workers follow trails of up to 100 feet to forage for food. Outside, nests are shallow and in soil under objects or in plant cavities, trees, trash, refuse, mulch and potted plants. Crazy ants enter homes in the fall or after rain when honeydew supplies are reduced.' )
-# ghost_ant = Ant.create( name: 'Ghost Ant', nodes: 1, size: 'Monomorphic workers, very small, 1/16 in (2 mm) long', general_desc: 'dark head/thorax with pale abdomen/legs', feeding_preference: 'Ghost ants prefer honeydew and insects, dead and living. Indoors, they prefer sweets and will forage for water sources during dry weather.', nest_site: 'Ghost ant nests range in size from moderate to large with thousands of workers and many queens. Indoors, nests are generally located within wall voids, behind baseboards, between cabinets and walls or in potted plant soil. Outside, nests are in potted plants, under stones, under and inside logs and firewood, in debris of tree crotches, in cavities of dead trees and shrubs, and in hollow cavities of plants.' )
-# odorous_house_ant = Ant.create( name: 'Odorous House Ant', nodes: 1, size: 'Monomorphic workers, 1/8 in (3.5 mm) long', general_desc: 'rotten odor when crushed', feeding_preference: 'When indoors, odorous house ants prefer sweets during most of the warm season but will eat high-protein foods and greasy meats and cheese as dictated by colony requirements. Outdoors, they feed on honeydew, plant secretions and sometimes seeds and insects.', nest_site: 'Odorous house ant colonies may contain up to 100,000 ants with many queens. Super colonies may exist where food, water and brood are exchanged between satellite locations. Indoors, odorous house ants nest in wall voids, especially around hot-water pipes and heaters, and in crevices around sinks and cupboards. Outdoors, nests are often found in soil, usually under objects. Odorous house ants are most likely to enter buildings when colonies become very large and natural food and water sources become scarce and when climate conditions are extreme (drought or flood).' )
-# #rover_ant = Ant.create( name: 'Rover Ant', nodes: 1, size: 'mono - 1.5mm', general_desc: 'dark reddish brown body' )
-# white_foot_ant = Ant.create( name: 'White-Footed Ant', nodes: 1, size: 'Workers, 1/8 in (3.5 mm) long', general_desc: 'dark body with pale yellow lower legs', feeding_preference: 'White-footed ants prefer sweets. Outdoors, they feed on honeydew and tend aphids, mealybugs and scales. Trophallaxis (cross feeding) has not been observed in this species. Because of this, baiting programs will not be effective as a stand-alone management program.', nest_site: 'White-footed ants are found in Florida, Hawaii and isolated areas of California. This species may be spread to other warm southern regions of the United States on infested goods and plants. White-footed ants nest in a variety of locations, and colonies can contain one million or more adults. These ants like to nest in dead wood, but will also invade and short out air conditioners. They nest in piles of lumber, firewood, stones, bricks, trash and heavy vegetation at foundations or in trees. Indoors, they nest in wall voids, potted plants and atriums. A single colony can encompass many sites, both close by and far away from a single nest. These extended colonies exchange workers, brood and food.' )
-# acrobat_ant = Ant.create( name: 'Acrobat Ant', nodes: 2, size: 'Monomorphic workers are one size, 1/8 in (3.5 mm) long', general_desc: 'heart-shaped abdomen', feeding_preference: 'Acrobat ants eat a wide variety of foods, including sweets and proteins. Workers like honeydew from sap-sucking insects (aphids, mealybugs, scale insects). These ants also prey on termite alates and immature stages of cotton boll weevil, grape curculio and codling moth.', nest_site: 'Indoors, nests may be located where water damage has occurred, in decayed or damp wood or inside insulating wall panels and wall voids. Outdoors, acrobat ants nest under rocks or in logs, firewood or trees where decay allows them to tunnel under bark or into wood.' )
-# big_headed_ant = Ant.create( name: 'Big-Headed Ant', nodes: 2, size: 'Workers 1/16–1/8 in (2–3.5 mm) long; all species have two different-sized workers', general_desc: 'very large head', feeding_preference: 'Big-headed ants prefer seeds and insects but will occasionally feed on honeydew from sap-sucking insects. Inside, they forage for meats, grease, liver, molasses, peanut butter, pet foods and fruit juices, preferring high-protein foods.', nest_site: 'Most form small (200- to 300-member) colonies, but colonies of some species contain thousands of ants and multiple queens. Big-headed ants enter buildings occasionally, preferring to nest in protected soil (such as under stones, leaf litter, mulch, patio blocks, slabs, firewood and landscape timbers). Some nest in open areas where they make small mounds, or in crawl spaces in termite-damaged wood.' )
-# #harvester_ant = Ant.create( name: 'Harvester Ant', nodes: 2, size: 'mono - NA', general_desc: '' )
-# little_black_ant = Ant.create( name: 'Little Black Ant', nodes: 2, size: 'Monomorphic workers very small, 1/16 in (2 mm) long', general_desc: 'very small black ant', feeding_preference: 'Little black ants are most commonly observed foraging on sugar sources such as insect honeydew and plant nectars. Indoors, little black ants may feed on grease, oil, meats, fruits, vegetable material such as corn meal, and sweets. Outdoors, they eat other insects, honeydew and sap secretions.', nest_site: 'Colonies of little black ants are small and contain many queens. If disturbed, colonies will readily move to other locations. Winged reproductives appear from June to August. Indoors, little black ants nest in woodwork, decaying wood and masonry. Outside nests are found in the soil under rocks, logs or debris. Nests may also be found in landscape mulch and in open areas of lawns where nests are characterized by small craters of very fine soil. A common location for outdoor nests is directly adjacent to building foundations. These ants forage in trails commonly seen on foundation walls and along sidewalks.' )
-# pavement_ant = Ant.create( name: 'Pavement Ant', nodes: 2, size: 'Monomorphic workers, 1/8 in (3.5 mm) long', general_desc: 'grooved head and thorax', feeding_preference: 'Pavement ants are opportunistic feeders that will “swarm” on foods that appear within their foraging range and are therefore easily controlled with bait. Indoors, pavement ants feed on meats, nuts, cheese, honey, bread crumbs, meats and grease. Pet food bowls are common foraging sites for pavement ants. Outdoors, this ant feeds on insects, honeydew, seeds and plant sap.', nest_site: 'Colonies average 3,000–4,000 ants with several queens. Pavement ants normally nest in soil; however, they occasionally nest indoors in walls, insulation and under floors. Colonies will move near a heat source in winter. Pavement ants often follow pipes through slabs to access buildings. Outdoors, these ants nest in soil under stones, slabs, next to buildings and in pavement cracks. They enter through cracks in slabs, expansion joints and natural openings of buildings. Pavement ants like to travel under the edges of carpet next to the tack strip. To inspect or treat this area, carefully lift the car- pet a small section at a time, then press down firmly to replace the carpet. Soil nests may have a characteristic “dirt crater” around the opening. Pavement ants forage up to 30 feet in trails.' )
-# pharaoh_ant = Ant.create( name: 'Pharaoh Ant', nodes: 2, size: 'Monomorphic workers, very small, 1/16–1/12 in (2.0–2.1 mm) long', general_desc: 'pale yellow to reddish body with black rear portion of abdomen', feeding_preference: 'Pharaoh ants have a wide preference of foods, from syrups to fruits, sweets, meats, pet foods and dead insects. Pharaoh ants have a high daily water requirement. Workers forage for water just as aggressively as for food. They will “harvest” water from unusual sources, such as aquariums, pet dishes, condensation on plumbing fixtures and windows, refrigerator condensation pans, air conditioners and house plants. In health care facilities, pharaoh ants have been known to forage on the wounds of immobile patients or residents.', nest_site: 'Pharaoh ant colonies range in size from several hundred thousand workers and several hundred reproductive females to very small colonies with 100 workers and one or two females. These ants nest almost anywhere, but prefer warm, humid areas near sources of food and water — in wall voids, behind baseboards, in furniture, under floors and between linens. In southern regions, colonies can exist outdoors. Workers range widely from the nest and establish visible trails to food and water sources. Pharaoh ants commonly use electrical and telephone wires, plumbing and other utility lines as trail routes. Outdoors, these ants nest in debris collected on flat roofs, entering and exiting via poorly caulked or defective windows, under flashing and through weep holes.' )
+puts "Seeding data..."
+# Game Data
+Game.create(id: 1, date: "3/19", time: "7PM", opponent: "Chicago White Sox", away: false, event: "Thirsty Thursdays")
+Game.create(id: 2, date: "4/03", time: "705PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: true, event: nil)
+
+# Game.create(id: 6, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: nil)
+# Game.create(id: 7, date: "4/010", time: "705PM", opponent: "Jacksonville", away: false, event: nil)
+# Game.create(id: 8, date: "4/011", time: "705PM", opponent: "Jacksonville", away: false, event: nil)
+# Game.create(id: 9, date: "4/012", time: "630PM", opponent: "Jacksonville", away: false, event: nil)
+# Game.create(id: 10, date: "4/013", time: "300PM", opponent: "Jacksonville", away: false, event: nil)
+
+# Game.create(id: 11, date: "4/14", time: "705PM", opponent: "Mobile", away: true, event: nil)
+# Game.create(id: 12, date: "4/15", time: "705PM", opponent: "Mobile", away: true, event: nil)
+# Game.create(id: 13, date: "4/16", time: "705PM", opponent: "Mobile", away: true, event: nil)
+# Game.create(id: 14, date: "4/17", time: "705PM", opponent: "Mobile", away: true, event: nil)
+# Game.create(id: 15, date: "4/18", time: "705PM", opponent: "Mobile", away: true, event: nil)
+
+# Game.create(id: 16, date: "4/19", time: "630PM", opponent: "Tennessee", away: false, event: nil)
+# Game.create(id: 17, date: "4/20", time: "500PM", opponent: "Tennessee", away: false, event: nil)
+# Game.create(id: 18, date: "4/21", time: "1130AM", opponent: "Tennessee", away: false, event: nil)
+# Game.create(id: 19, date: "4/22", time: "705PM", opponent: "Tennessee", away: false, event: nil)
+# Game.create(id: 20, date: "4/23", time: "1100AM", opponent: "Tennessee", away: false, event: nil)
+
+# Game.create(id: 21, date: "4/24", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
+# Game.create(id: 22, date: "4/25", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
+# Game.create(id: 23, date: "4/26", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
+# Game.create(id: 24, date: "4/27", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
+# Game.create(id: 25, date: "4/28", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
+
+# Game.create(id: 26, date: "4/30", time: "705PM", opponent: "Mobile", away: false, event: nil)
+# Game.create(id: 27, date: "5/01", time: "705PM", opponent: "Mobile", away: false, event: nil)
+# Game.create(id: 28, date: "5/02", time: "705PM", opponent: "Mobile", away: false, event: nil)
+# Game.create(id: 29, date: "5/03", time: "630PM", opponent: "Mobile", away: false, event: nil)
+# Game.create(id: 30, date: "5/04", time: "300PM", opponent: "Mobile", away: false, event: nil)
+
+# Game.create(id: 31, date: "5/05", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 32, date: "5/06", time: "1100AM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 33, date: "5/07", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 34, date: "5/08", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 35, date: "5/09", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+
+# Game.create(id: 36, date: "5/10", time: "630PM", opponent: "Pensacola", away: false, event: nil)
+# Game.create(id: 37, date: "5/11", time: "300PM", opponent: "Pensacola", away: false, event: nil)
+# Game.create(id: 38, date: "5/12", time: "1130AM", opponent: "Pensacola", away: false, event: nil)
+# Game.create(id: 39, date: "5/13", time: "705PM", opponent: "Pensacola", away: false, event: nil)
+# Game.create(id: 40, date: "5/14", time: "1100AM", opponent: "Pensacola", away: false, event: nil)
+
+# Game.create(id: 41, date: "5/15", time: "630PM", opponent: "Huntsville", away: true, event: nil)
+# Game.create(id: 42, date: "5/16", time: "630PM", opponent: "Huntsville", away: true, event: nil)
+# Game.create(id: 43, date: "5/17", time: "630PM", opponent: "Huntsville", away: true, event: nil)
+# Game.create(id: 44, date: "5/18", time: "100PM", opponent: "Huntsville", away: true, event: nil)
+# Game.create(id: 45, date: "5/19", time: "630PM", opponent: "Huntsville", away: true, event: nil)
+
+# Game.create(id: 46, date: "5/21", time: "630PM", opponent: "Pensacola", away: true, event: nil)
+# Game.create(id: 47, date: "5/22", time: "630PM", opponent: "Pensacola", away: true, event: nil)
+# Game.create(id: 48, date: "5/23", time: "630PM", opponent: "Pensacola", away: true, event: nil)
+# Game.create(id: 49, date: "5/24", time: "630PM", opponent: "Pensacola", away: true, event: nil)
+# Game.create(id: 50, date: "5/25", time: "400PM", opponent: "Pensacola", away: true, event: nil)
+
+# Game.create(id: 51, date: "5/26", time: "705PM", opponent: "Chattanooga", away: false, event: nil)
+# Game.create(id: 52, date: "5/27", time: "705PM", opponent: "Chattanooga", away: false, event: nil)
+# Game.create(id: 53, date: "5/28", time: "705PM", opponent: "Chattanooga", away: false, event: nil)
+# Game.create(id: 54, date: "5/29", time: "705PM", opponent: "Chattanooga", away: false, event: nil)
+# Game.create(id: 55, date: "5/30", time: "705PM", opponent: "Chattanooga", away: false, event: nil)
+
+# Game.create(id: 56, date: "5/31", time: "515PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 57, date: "6/01", time: "100PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 58, date: "6/02", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 59, date: "6/03", time: "615PM", opponent: "Tennessee", away: true, event: nil)
+# Game.create(id: 60, date: "6/04", time: "1100AM", opponent: "Tennessee", away: true, event: nil)
+
+# puts "Done."

@@ -2,18 +2,67 @@ $black: #19201e;
 $red: #de4e3f;
 $gray: #25302d;
 
+.schedule-subgrid {
+	font-size: 2rem;
+}
+
+.schedule-subgrid li {
+	padding-bottom: 10px !important;
+}
+
+.middle-section-schedule {
+	text-align: left;
+}
 
 .schedule-section {
 	background: $gray;
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
+	padding-top: 40px;
+ 	padding-bottom: 40px;
 }
 
 .schedule-header {
-	font-family: 'Oswald', sans-serif;
-	color: white;
+	font-family: 'hamilton19';
+	letter-spacing: 3px;
+	color: $red;
 	font-size: 3rem;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 30px;
+}
+
+.star {
+	vertical-align: 20%;
+	font-size: 2rem;
+	color: white;
+}
+
+.schedule-ul {
+	color: white;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.date {
+	float: left;
+}
+
+.time {
+	float: right;
+}
+
+.venue {
+	text-transform: lowercase;
+}
+
+
+
+@media only screen and (max-width: 40.063em) {
+	.schedule-subgrid {
+		font-size: 1rem;
+	}
 }

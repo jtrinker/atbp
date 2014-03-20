@@ -1,15 +1,27 @@
+@import "fonts";
 $black: #19201e;
 $red: #de4e3f;
 
 
 .event-section {
 	background: $black;
-	padding: 0px;
+	padding-top: 40px;
+ 	padding-bottom: 40px;
 	margin: 0px;
 }
 
 .event-header {
+	font-family: 'hamilton19', sans-serif;
+	letter-spacing: 3px;
+	color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.event-subheader {
 	font-family: 'Oswald', sans-serif;
+	letter-spacing: 4px;
 	color: white;
 	font-size: 3rem;
 	text-transform: uppercase;

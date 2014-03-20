@@ -1,3 +1,6 @@
+# Add the fonts path
+# config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -21,3 +24,4 @@ module Atbp
     # config.i18n.default_locale = :de
   end
 end
+
