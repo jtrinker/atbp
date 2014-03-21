@@ -6,12 +6,11 @@
 						<% schedule.each do |game| %>
 						<li style="padding-bottom: 7px;">
 
-						 	<ul class="small-block-grid-3 schedule-subgrid">
-								 	<li style="padding-bottom: 7px;">
+								 	<div class="small-4 columns schedule-subgrid" style="padding-bottom: 7px;">
 											<span class="date"><%= game.date.strftime("%_m/%d")[1..-1] %></span>
-									</li>
+									</div>
 
-									<li class="text-left" style="white-space: nowrap; margin-left: -33px; padding-bottom: 7px;">
+									<div class="small-4 columns schedule-subgrid middlelist" style="white-space: nowrap; margin-left: -33px; padding-bottom: 7px;">
 											<span class="venue"><% if game.away %>
 																	at
 																<% else %>
@@ -20,12 +19,12 @@
 											</span>
 											
 											<span class="opponent"><%= game.opponent %></span>
-									</li>
+									</div>
 
-									<li style="padding-bottom: 7px;">
+									<div class="small-4 columns schedule-subgrid" style="">
 											<span class="time"><%= game.time %></span>
-									</li>
-							</ul>
+									</div>
+							
 						</li>
 						<% end %>
 					</ul>

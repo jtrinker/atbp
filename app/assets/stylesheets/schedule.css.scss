@@ -3,7 +3,7 @@ $red: #de4e3f;
 $gray: #25302d;
 
 .schedule-subgrid {
-	font-size: 2rem;
+	font-size: 1.9rem;
 }
 
 .schedule-subgrid li {
@@ -11,6 +11,10 @@ $gray: #25302d;
 }
 
 .middle-section-schedule {
+	text-align: left;
+}
+
+.middlelist {
 	text-align: left;
 }
 
@@ -64,5 +68,13 @@ $gray: #25302d;
 @media only screen and (max-width: 40.063em) {
 	.schedule-subgrid {
 		font-size: 1rem;
+	}
+
+	.schedule-header {
+		font-size: 1.7rem !important;
+	}
+
+	.star {
+		font-size: 1rem !important;
 	}
 }

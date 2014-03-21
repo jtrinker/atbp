@@ -2,11 +2,11 @@ Game.destroy_all
 
 puts "Seeding data..."
 # Game Data
-Game.create(id: 1, date: "3/28", time: "7PM", opponent: "Chicago White Sox", away: false, event: "mlb in birmingham")
+Game.create(id: 1, date: "3/20", time: "7PM", opponent: "White Sox", away: false, event: "mlb in birmingham")
 Game.create(id: 2, date: "4/03", time: "705PM", opponent: "Montgomery", away: true, event: nil)
-Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Montgomery", away: true, event: nil)
-Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Montgomery", away: true, event: nil)
-Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Chattanooga", away: true, event: nil)
+Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Pensacola", away: true, event: nil)
+Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Tennessee", away: true, event: nil)
 Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: true, event: nil)
 
 Game.create(id: 7, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: nil)

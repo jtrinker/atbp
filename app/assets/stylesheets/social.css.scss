@@ -27,6 +27,9 @@ $gray: #25302d;
 	color: white;
 	font-size: 6rem;
 	text-align: center;
+    a {
+        color: $black;
+    }
 }
 
 
@@ -102,11 +105,29 @@ a.symbol:before {
     font-size: 130%;
 }
 
-
+.maintextwrap {
+        top: 10% !important;
+    }
 
 
 @media only screen and (max-width: 40.063em) {
     .social-icon {
         font-size: 4rem !important;
+    }
+
+    .social-header {
+        font-size: 1.7rem !important;
+    }
+
+    .star {
+        font-size: 1rem !important;
+    }
+
+    .mainlogo-padding {
+        padding-top: 5px !important;
+    }
+
+    .maintextwrap {
+        top: 30% !important;
     }
 }

@@ -27,3 +27,20 @@ $red: #de4e3f;
 	text-transform: uppercase;
 	text-align: center;
 }
+
+
+
+@media only screen and (max-width: 40.063em) {
+    .event-header {
+        font-size: 1.7rem !important;
+    }
+
+    .event-subheader {
+        font-size: 1.8rem !important;
+    }
+
+    .socialleft {
+    	margin-left: -17px !important;
+    }
+
+ }
