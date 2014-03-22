@@ -18,7 +18,7 @@ module GamesHelper
 		minutes = seconds / 60
 		hours = minutes / 60
 		days = hours / 24
-		days.floor
+		days.ceil
 	end
 
 	def play_today(game)

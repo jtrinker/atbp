@@ -4,6 +4,12 @@
 		<% unless n == 1 %>
 			<%= game.event || @phrase.line %>
 			<% n = 1 %>
+		<% end %>	
+	<% else %>
+		<% unless n == 1 %>
+			<%= @phrase.line %>
+			<% n = 1 %>
 		<% end %>
 	<% end %>
-<% end %>	
+<% end %>
+	
