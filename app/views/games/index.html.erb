@@ -11,8 +11,14 @@
 </div>
 
 <div data-equalizer>
+	<div class="show-for-large-up" data-equalizer-watch>
 	<%= render "if_event", games: @games %>
-	<div class="large-6 columns largeright" data-equalizer-watch>
+	</div>
+	<div class="large-6 columns largeright small-push-12" data-equalizer-watch>
 		<%= render "schedule", schedule: @schedule %>
+	</div>
+
+	<div class="hide-for-large-up" data-equalizer-watch>
+	<%= render "if_event", games: @games %>
 	</div>
 </div>
