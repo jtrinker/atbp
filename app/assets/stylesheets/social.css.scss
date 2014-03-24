@@ -19,6 +19,23 @@ $gray: #25302d;
 	text-align: center;
 }
 
+.socialleft {
+  max-width: 400px;
+margin: 0 auto;
+}
+
+.sociallist-final li {
+  float: left;
+  margin: 0 10px;
+}
+
+.sociallist-final {
+  list-style: none;
+  width: 377px;
+height: 50px;
+margin: 0 auto !important;
+}
+
 
 .social-ul li {
 	font-family: 'hamilton19';
@@ -115,14 +132,11 @@ a.symbol:before {
 }
 
 .maintextwrap {
-        top: 10% !important;
+        top: 20% !important;
     }
 
 
 @media only screen and (max-width: 40.063em) {
-    .social-icon {
-        font-size: 4rem !important;
-    }
 
     .social-header {
         font-size: 1.7rem !important;
@@ -139,4 +153,20 @@ a.symbol:before {
     .maintextwrap {
         top: 30% !important;
     }
+
+    .sociallist-final {
+  list-style: none;
+  width: 200px;
+height: 50px;
+margin: 0 auto !important;
+}
+
+.sociallist-final li {
+  margin: 0 5px !important
+}
+
+.sociallist-final li img {
+  width: 40px !important;
+}
+
 }

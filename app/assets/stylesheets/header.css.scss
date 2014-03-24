@@ -1,6 +1,27 @@
 $black: #19201e;
 $red: #de4e3f;
 
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: lightgray !important;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	transition: .25s;
+}
+
+.answer:hover {
+	cursor: pointer;
+	color: lightgray !important;
+	-webkit-transition: .25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+	transition: .25s;
+}
+
 .main-section {
 	background: image-url("atbp-main-bg.jpg");
 	background-size: cover;
@@ -33,6 +54,7 @@ $red: #de4e3f;
 	vertical-align: middle; 
 	text-align: center; 
 	width: 100%;
+	line-height: .7;
 }
 
 .main-text2 {

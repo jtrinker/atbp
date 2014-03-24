@@ -49,6 +49,8 @@ $gray: #25302d;
 	font-family: 'hamilton20';
 	font-size: 1.8rem;
 	text-transform: uppercase;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 .date {
@@ -66,9 +68,6 @@ $gray: #25302d;
 
 
 @media only screen and (max-width: 40.063em) {
-	.schedule-subgrid {
-		font-size: 1rem;
-	}
 
 	.schedule-header {
 		font-size: 1.7rem !important;
@@ -77,4 +76,13 @@ $gray: #25302d;
 	.star {
 		font-size: 1rem !important;
 	}
+
+	.schedule-ul {
+		font-size: 1.2rem !important;
+		max-width: 240px !important;
+	}
+
+	.schedule-subgrid {
+	font-size: 1.2rem;
+}
 }
