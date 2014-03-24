@@ -22,6 +22,11 @@ a:hover {
 	transition: .25s;
 }
 
+.countdown-text:hover {
+	cursor: auto !important;
+	color: white !important;
+}
+
 .main-section {
 	background: image-url("atbp-main-bg.jpg");
 	background-size: cover;
