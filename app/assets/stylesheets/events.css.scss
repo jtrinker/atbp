@@ -13,16 +13,16 @@ $red: #de4e3f;
 	font-family: 'hamilton19', sans-serif;
 	letter-spacing: 3px;
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
 }
 
 .event-subheader {
 	font-family: 'hamilton20';
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: white;
-	font-size: 3rem;
+	font-size: 4.2rem;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -31,11 +31,11 @@ $red: #de4e3f;
 
 @media only screen and (max-width: 40.063em) {
     .event-header {
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
     }
 
     .event-subheader {
-        font-size: 1.8rem !important;
+        font-size: 1.9rem !important;
     }
 
     .socialleft {
