@@ -12,10 +12,10 @@
 
 // Always center modal
 $(function() {
-  $('#responsive_headline').on('click', function() {
-    var halfwidth = parseInt(parseInt($('#myModal').css('width')) / 2) * -1;
-    $('#myModal').css('margin-left',halfwidth);
-  });
+    $('#responsive_headline').on('click', function() {
+      var halfwidth = parseInt(parseInt($('#myModal').css('width')) / 2) * -1;
+      $('#myModal').css('margin-left', halfwidth);
+    });
 });
 // End modal code
 
