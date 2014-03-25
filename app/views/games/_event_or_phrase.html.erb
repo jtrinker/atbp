@@ -2,12 +2,12 @@
 <% games.each do |game| %>
 	<% if play_today(game) %>
 		<% unless n == 1 %>
-			<%= game.event || @phrase.line %>
+			<%= game.event || phrase.line %>
 			<% n = 1 %>
 		<% end %>	
-	<% else %>
+	<% elsif !play_today(game) %>
 		<% unless n == 1 %>
-			<%= @phrase.line %>
+			<%= @countdown_phrase.line %>
 			<% n = 1 %>
 		<% end %>
 	<% end %>

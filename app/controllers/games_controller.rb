@@ -6,6 +6,7 @@ class GamesController < ApplicationController
   	@next_games = Game.where(["date > ?", Time.now]).all
   	@schedule = @next_games[0..4]
   	@phrase = Game.pull_phrase
+  	@countdown_phrase = Game.pull_countdown_phrase
   end
 end
 

@@ -83,3 +83,11 @@ Phrase.create(id: 3, line: "beers, brats, balls")
 Phrase.create(id: 4, line: "homies and beer")
 Phrase.create(id: 5, line: "sunshine & balls. enjoy")
 
+CountdownPhrase.destroy_all
+
+CountdownPhrase.create(id: 1, line: "What’s on netflix?")
+CountdownPhrase.create(id: 2, line: "time to go muddin")
+CountdownPhrase.create(id: 3, line: "is carrigans?")
+CountdownPhrase.create(id: 4, line: "time to de-pants")
+CountdownPhrase.create(id: 5, line: "lady liberty weeps")
+
