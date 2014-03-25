@@ -2,7 +2,7 @@ module GamesHelper
 
 	def first_game
 		# Make sure to set to 3/28
-		Time.new(2014, 4, 9)
+		Time.new(2014, 3, 22)
 	end
 
 	def next_game
