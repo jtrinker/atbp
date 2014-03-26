@@ -93,7 +93,7 @@ CountdownPhrase.create(id: 6, line: "googling myself")
 CountdownPhrase.create(id: 7, line: "late brunch at centrale")
 CountdownPhrase.create(id: 8, line: "looking for marty swant")
 CountdownPhrase.create(id: 9, line: "slice of pie at POPs")
-CountdownPhrase.create(id: 10, line: "ridin' ms. ancy")
+CountdownPhrase.create(id: 10, line: "ridin' ms. fancy")
 CountdownPhrase.create(id: 11, line: "beers at trimtab")
 
 
