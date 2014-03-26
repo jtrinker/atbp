@@ -1,8 +1,15 @@
 $black: #19201e;
 $red: #de4e3f;
+$gray: #25302d;
 
 .schedule-section {
 	border: none !important;
+}
+
+
+
+body {
+	background: $gray !important;
 }
 
 a {
@@ -119,7 +126,7 @@ a:hover {
 	}
 
 	.main-logo {
-		max-width: 50% !important;
+		width: 100px !important;
 	}
 }
 
