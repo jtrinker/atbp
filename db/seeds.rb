@@ -10,10 +10,10 @@ Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Montgomery", away: tr
 Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: true, event: nil)
 
 Game.create(id: 7, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: "opening night")
-Game.create(id: 8, date: "4/010", time: "705PM", opponent: "Jacksonville", away: false, event: "thirsty thursday")
-Game.create(id: 9, date: "4/011", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
-Game.create(id: 10, date: "4/012", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway"
-Game.create(id: 11, date: "4/013", time: "300PM", opponent: "Jacksonville", away: false, event: "salute to armed forces sunday")
+Game.create(id: 8, date: "4/10", time: "705PM", opponent: "Jacksonville", away: false, event: "thirsty thursday")
+Game.create(id: 9, date: "4/11", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
+Game.create(id: 10, date: "4/12", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway")
+Game.create(id: 11, date: "4/13", time: "300PM", opponent: "Jacksonville", away: false, event: "salute to armed forces sunday")
 
 Game.create(id: 12, date: "4/14", time: "705PM", opponent: "Mobile", away: true, event: nil)
 Game.create(id: 13, date: "4/15", time: "705PM", opponent: "Mobile", away: true, event: nil)
@@ -21,7 +21,7 @@ Game.create(id: 14, date: "4/16", time: "705PM", opponent: "Mobile", away: true,
 Game.create(id: 15, date: "4/17", time: "705PM", opponent: "Mobile", away: true, event: nil)
 Game.create(id: 16, date: "4/18", time: "705PM", opponent: "Mobile", away: true, event: nil)
 
-Game.create(id: 17, date: "4/19", time: "630PM", opponent: "Tennessee", away: false, event: "Grill Giveaway")
+Game.create(id: 17, date: "4/19", time: "630PM", opponent: "Tennessee", away: false, event: "grill giveaway")
 Game.create(id: 18, date: "4/20", time: "500PM", opponent: "Tennessee", away: false, event: "salute to armed forces sunday")
 Game.create(id: 19, date: "4/21", time: "1130AM", opponent: "Tennessee", away: false, event: nil)
 Game.create(id: 20, date: "4/22", time: "705PM", opponent: "Tennessee", away: false, event: "50 cent hotdog night")
