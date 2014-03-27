@@ -12,6 +12,55 @@
  *= require_tree .
  */
 
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: asset_url('fonts/MonoSocialIconsFont-1.10.eot');
+    src: asset_url('fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         asset_url('fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         asset_url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         asset_url('fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: asset_url('fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'hamilton18';
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.eot?#iefix') format('embedded-opentype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.woff') format('woff'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.svg#MonoSocialIconsFont') format('svg');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-718-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'hamilton19';
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.eot?#iefix') format('embedded-opentype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.woff') format('woff'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.svg#MonoSocialIconsFont') format('svg');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hamilton20';
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.eot');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.eot?#iefix') format('embedded-opentype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.woff') format('woff'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.ttf') format('truetype'),
+       asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.svg#MonoSocialIconsFont') format('svg');
+  src: asset_url('fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media only screen and (min-width: 64.063em) {
 	.event-section,
 	.social-section {
