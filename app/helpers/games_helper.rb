@@ -2,11 +2,11 @@ module GamesHelper
 
 	def first_game
 		# Make sure to set to 4/9
-		Time.new(2014, 4, 9)
+		Time.new(2014, 3, 22)
 	end
 
 	def next_home_game
-		seconds = @next_home_games[0].date - Time.now
+		seconds = @next_home_games[0].date - Time.now + 5.hours
 		minutes = seconds / 60
 		hours = minutes / 60
 		days = hours / 24
@@ -14,7 +14,7 @@ module GamesHelper
 	end
 
 	def time_till_first_game
-		seconds = @games[6].date - Time.now
+		seconds = @games[6].date - Time.now + 5.hours
 		minutes = seconds / 60
 		hours = minutes / 60
 		days = hours / 24
