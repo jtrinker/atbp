@@ -1,2 +1,6 @@
 <h1 class="main-text answer countdown-text" id="responsive_headline"><%= time_till_first_game %></h1>
-<h2 class="main-text2 gamewrap" id="responsive_headline2">days till opening day</h2>
+<% if time_till_first_game > 1 %>
+	<h2 class="main-text2 gamewrap" id="responsive_headline2">days till opening day</h2>
+<% else %>
+	<h2 class="main-text2 gamewrap" id="responsive_headline2">day till opening day</h2>
+<% end %>
