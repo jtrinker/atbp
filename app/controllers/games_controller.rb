@@ -4,7 +4,7 @@ class GamesController < ApplicationController
   	@games = Game.all
   	@first_game = Game.find(7)
 
-  	@next_games = Game.where(["date > ?", Time.now]).all
+  	@next_games = Game.where(["date > ?", Time.now + 5.hours]).all
   	@next_home_games = @next_games.select { |game| game.away == false }
 
   	@schedule = @next_games[0..4]
