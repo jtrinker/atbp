@@ -1,7 +1,7 @@
 <% i = 0 %>
 <% games.each do |game| %>
 	<% adjusted_date = game.date - 5.hours %>
-	<% time_adjusted = Time.now + 5.hours %>
+	<% time_adjusted = Time.now - 5.hours %>
 	<% if adjusted_date.strftime("%_m/%d")[1..-1] == time_adjusted.strftime("%_m/%d")[1..-1] && game.away == false %>
 		<h1 class="main-text answer yesanswer" id="responsive_headline"><%=link_to "YES!", "http://www.milb.com/tickets/singlegame.jsp?sid=t247", target: "_blank" %></h1>
 		<% i = 1 %>
