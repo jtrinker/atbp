@@ -22,7 +22,13 @@ module GamesHelper
 	end
 
 	def play_today(game)
-		game.date == Date.today.strftime("%_m/%d")[1..-1]
+		game.date == ActiveSupport::TimeZone["Central Time (US & Canada)"].parse(game.date.to_s).utc.to_date.strftime("%_m/%d")[1..-1]
+		# game.date == Date.today.strftime("%_m/%d")[1..-1]
 	end
+
+	def to_utc
+		ActiveSupport::TimeZone["Central Time (US & Canada)"]
+	end
+
 end
 
