@@ -6,7 +6,7 @@ module GamesHelper
 	end
 
 	def next_home_game
-		seconds = @next_home_games[0].date - Time.zone.now
+		seconds = @next_home_games[0].date - Time.now
 		minutes = seconds / 60
 		hours = minutes / 60 + 5
 		days = hours / 24
@@ -14,7 +14,7 @@ module GamesHelper
 	end
 
 	def time_till_first_game
-		seconds = @games[6].date - Time.zone.now
+		seconds = @games[6].date - Time.now
 		minutes = seconds / 60
 		hours = minutes / 60 + 5
 		days = hours / 24
@@ -22,7 +22,7 @@ module GamesHelper
 	end
 
 	def play_today(game)
-		game.date == Time.zone.today.strftime("%_m/%d")[1..-1]
+		game.date == Date.today.strftime("%_m/%d")[1..-1]
 	end
 end
 

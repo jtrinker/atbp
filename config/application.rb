@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Atbp
   class Application < Rails::Application
-  	config.time_zone = 'Central Time (US & Canada)'
+
   end
 end
 

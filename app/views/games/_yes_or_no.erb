@@ -1,6 +1,6 @@
 <% i = 0 %>
 <% games.each do |game| %>
-	<% if game.date.strftime("%_m/%d")[1..-1] == Time.zone.today.strftime("%_m/%d")[1..-1] && game.away == false %>
+	<% if game.date.strftime("%_m/%d")[1..-1] == Time.now.strftime("%_m/%d")[1..-1] && game.away == false %>
 		<h1 class="main-text answer yesanswer" id="responsive_headline"><%=link_to "YES!", "http://www.milb.com/tickets/singlegame.jsp?sid=t247", target: "_blank" %></h1>
 		<% i = 1 %>
 		<br>
@@ -15,7 +15,7 @@
 				<span class="next-time"><%= game.time %></span>
 			<% end %>
 		</h2>
-	<% elsif game.date.strftime("%_m/%d")[1..-1] == Time.zone.today.strftime("%_m/%d")[1..-1] && game.away == true %>
+	<% elsif game.date.strftime("%_m/%d")[1..-1] == Time.now.strftime("%_m/%d")[1..-1] && game.away == true %>
 		<% unless i == 1 %>
 		<a><h1 class="main-text answer" data-reveal-id="myModal" data-reveal id="responsive_headline">NO.</h1></a>
 		<% i = 1 %>
