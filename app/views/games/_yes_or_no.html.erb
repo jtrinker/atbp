@@ -15,7 +15,7 @@
 				<span class="next-time"><%= game.time %></span>
 			<% end %>
 		</h2>
-	<% elsif game.date.utc.strftime("%_m/%d")[1..-1] == Time.zone.now.strftime("%_m/%d")[1..-1] && game.away == true %>
+	<% elsif game.date.localtime.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1] && game.away == true %>
 		<% unless i == 1 %>
 		<a><h1 class="main-text answer" data-reveal-id="myModal" data-reveal id="responsive_headline">NO.</h1></a>
 		<% i = 1 %>
