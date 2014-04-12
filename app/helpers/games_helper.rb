@@ -22,17 +22,11 @@ module GamesHelper
 	end
 
 	def play_today(game)
-		# ActiveSupport::TimeZone["Central Time (US & Canada)"].parse(game.date.to_s).utc.to_date.strftime("%_m/%d")[1..-1] == Date.today.in_time_zone.strftime("%_m/%d")[1..-1]
 		game.date.localtime.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1]
 	end
 
 	def time_minus_five
 		Time.zone.now.localtime - 5.hours
 	end
-
-	def to_utc
-		ActiveSupport::TimeZone["Central Time (US & Canada)"]
-	end
-
 end
 
