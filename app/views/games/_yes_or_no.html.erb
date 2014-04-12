@@ -1,6 +1,6 @@
 <% i = 0 %>
 <% games.each do |game| %>
-	<% if game.date.localtime.strftime("%_m/%d")[1..-1] == Time.zone.now.localtime.strftime("%_m/%d")[1..-1] && game.away == false %>
+	<% if game.date.localtime.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1] && game.away == false %>
 		<h1 class="main-text answer yesanswer" id="responsive_headline"><%=link_to "YES!", "http://www.milb.com/tickets/singlegame.jsp?sid=t247", target: "_blank" %></h1>
 		<% i = 1 %>
 		<br>

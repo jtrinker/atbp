@@ -26,6 +26,10 @@ module GamesHelper
 		game.date.localtime.strftime("%_m/%d")[1..-1] == Time.zone.now.localtime.strftime("%_m/%d")[1..-1]
 	end
 
+	def time_minus_five
+		Time.zone.now.localtime - 5.hours
+	end
+
 	def to_utc
 		ActiveSupport::TimeZone["Central Time (US & Canada)"]
 	end

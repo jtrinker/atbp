@@ -1,4 +1,4 @@
 <% @games.each do |game| %>
-	<p>Today's Date: <%= Time.zone.now.localtime - 5.hours %><br>
+	<p>Today's Date: <%= time_minus_five.strftime("%_m/%d")[1..-1] %><br>
 	Game Date: <%= game.date.localtime %></h5></p>
 <% end %>
