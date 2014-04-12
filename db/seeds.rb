@@ -11,7 +11,7 @@ puts "Seeding data..."
 
 # Game.create(id: 7, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: "opening night")
 # Game.create(id: 8, date: "4/10", time: "705PM", opponent: "Jacksonville", away: false, event: "thirsty thursday")
-Game.create(id: 9, date: "2014-4-11 12am", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
+# Game.create(id: 9, date: "2014-4-11 12am", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
 Game.create(id: 10, date: "2014-4-12 12am", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway")
 Game.create(id: 11, date: "4/13", time: "300PM", opponent: "Jacksonville", away: false, event: "salute to armed forces sunday")
 
@@ -95,6 +95,3 @@ CountdownPhrase.create(id: 8, line: "looking for marty swant")
 CountdownPhrase.create(id: 9, line: "slice of pie at POPs")
 CountdownPhrase.create(id: 10, line: "ridin' ms. fancy")
 CountdownPhrase.create(id: 11, line: "beers at trimtab")
-
-
-

@@ -11,5 +11,8 @@ class GamesController < ApplicationController
   	@phrase = Game.pull_phrase
   	@countdown_phrase = Game.pull_countdown_phrase
   end
+
+  def test
+  end
 end
 
