@@ -1,0 +1,4 @@
+<% @games.each do |game| %>
+	<p>Today's Date: <%= Time.zone.now.localtime %><br>
+	Game Date: <%= game.date.localtime %></h5></p>
+<% end %>

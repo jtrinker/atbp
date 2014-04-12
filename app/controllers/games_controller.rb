@@ -13,6 +13,7 @@ class GamesController < ApplicationController
   end
 
   def test
+  	@games = Game.all
   end
 end
 
