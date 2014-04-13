@@ -2,17 +2,17 @@ Game.destroy_all
 
 puts "Seeding data..."
 # Game Data
-# Game.create(id: 1, date: "3/28", time: "700PM", opponent: "White Sox", away: false, event: "mlb in birmingham")
-# Game.create(id: 2, date: "4/03", time: "705PM", opponent: "Montgomery", away: true, event: nil)
-# Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Montgomery", away: true, event: nil)
-# Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Montgomery", away: true, event: nil)
-# Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Montgomery", away: true, event: nil)
-# Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 1, date: "3/28", time: "700PM", opponent: "White Sox", away: false, event: "mlb in birmingham")
+Game.create(id: 2, date: "4/03", time: "705PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 3, date: "4/04", time: "705PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 4, date: "4/05", time: "635PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 5, date: "4/06", time: "205PM", opponent: "Montgomery", away: true, event: nil)
+Game.create(id: 6, date: "4/07", time: "1035AM", opponent: "Montgomery", away: true, event: nil)
 
-# Game.create(id: 7, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: "opening night")
-# Game.create(id: 8, date: "4/10", time: "705PM", opponent: "Jacksonville", away: false, event: "thirsty thursday")
-# Game.create(id: 9, date: "2014-4-11 12am", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
-Game.create(id: 10, date: "2014-4-12 12am", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway")
+Game.create(id: 7, date: "4/09", time: "705PM", opponent: "Jacksonville", away: false, event: "opening night")
+Game.create(id: 8, date: "4/10", time: "705PM", opponent: "Jacksonville", away: false, event: "thirsty thursday")
+Game.create(id: 9, date: "2014-4-11 12am", time: "705PM", opponent: "Jacksonville", away: false, event: "friday night fireworks")
+Game.create(id: 10, date: "4/12", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway")
 Game.create(id: 11, date: "4/13", time: "300PM", opponent: "Jacksonville", away: false, event: "salute to armed forces")
 
 Game.create(id: 12, date: "4/14", time: "705PM", opponent: "Mobile", away: true, event: nil)

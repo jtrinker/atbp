@@ -22,7 +22,7 @@ module GamesHelper
 	end
 
 	def play_today(game)
-		game.date.localtime.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1]
+		game.date.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1]
 	end
 
 	def time_minus_five

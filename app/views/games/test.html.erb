@@ -1,4 +1,8 @@
 <% @games.each do |game| %>
 	<p>Today's Date: <%= time_minus_five.strftime("%_m/%d")[1..-1] %><br>
-	Game Date: <%= game.date.localtime %></h5></p>
+	Game Date: <%= game.date.localtime %></h5><br>
+	<% if game.date.strftime("%_m/%d")[1..-1] == time_minus_five.strftime("%_m/%d")[1..-1] %>
+		<%= game.event %>
+	<% end %>
+  </p>
 <% end %>

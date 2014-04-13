@@ -6,7 +6,7 @@
 			<% n = 1 %>
 		<% end %>	
 	<% elsif !play_today(game) %>
-		<% unless n == 1 %>
+		<% unless n == 1 || game.date.localtime.strftime("%_m/%d")[1..-1] < time_minus_five.strftime("%_m/%d")[1..-1] %>
 			<%= @countdown_phrase.line %>
 			<% n = 1 %>
 		<% end %>

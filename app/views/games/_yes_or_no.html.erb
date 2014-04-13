@@ -25,7 +25,7 @@
 		</h2>
 		<% end %>
 	<% else %>
-		<% unless i == 1 %>
+		<% unless i == 1 || game.date.localtime.strftime("%_m/%d")[1..-1] < time_minus_five.strftime("%_m/%d")[1..-1] %>
 		<a><h1 class="main-text answer" data-reveal-id="myModal" data-reveal id="responsive_headline">NO.</h1></a>
 		<% i = 1 %>
 		<h2 class="main-text2 gamewrap" id="responsive_headline2">
