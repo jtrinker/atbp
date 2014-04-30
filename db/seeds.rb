@@ -15,11 +15,11 @@ Game.create(id: 9, date: "2014-4-11 12am", time: "705PM", opponent: "Jacksonvill
 Game.create(id: 10, date: "2014-4-12 12am", time: "630PM", opponent: "Jacksonville", away: false, event: "grill giveaway")
 Game.create(id: 11, date: "2014-4-13 12am", time: "300PM", opponent: "Jacksonville", away: false, event: "salute to armed forces")
 
-Game.create(id: 12, date: "4/14", time: "705PM", opponent: "Mobile", away: true, event: nil)
-Game.create(id: 13, date: "4/15", time: "705PM", opponent: "Mobile", away: true, event: nil)
-Game.create(id: 14, date: "4/16", time: "705PM", opponent: "Mobile", away: true, event: nil)
-Game.create(id: 15, date: "4/17", time: "705PM", opponent: "Mobile", away: true, event: nil)
-Game.create(id: 16, date: "4/18", time: "705PM", opponent: "Mobile", away: true, event: nil)
+Game.create(id: 12, date: "2014-4-14 12am", time: "705PM", opponent: "Mobile", away: true, event: nil)
+Game.create(id: 13, date: "2014-4-15 12am", time: "705PM", opponent: "Mobile", away: true, event: nil)
+Game.create(id: 14, date: "2014-4-16 12am", time: "705PM", opponent: "Mobile", away: true, event: nil)
+Game.create(id: 15, date: "2014-4-17 12am", time: "705PM", opponent: "Mobile", away: true, event: nil)
+Game.create(id: 16, date: "2014-4-18 12am", time: "705PM", opponent: "Mobile", away: true, event: nil)
 
 Game.create(id: 17, date: "4/19", time: "630PM", opponent: "Tennessee", away: false, event: "grill giveaway")
 Game.create(id: 18, date: "4/20", time: "500PM", opponent: "Tennessee", away: false, event: "salute to armed forces sunday")
