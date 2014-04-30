@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    <title><%= content_for?(:title) ? yield(:title) : "Are the Barons Playing?" %></title>
+    <title>Are the Birmingham Barons Playing?</title>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= favicon_link_tag 'apple-touch-icon.jpg', :rel => 'apple-touch-icon', :type => 'image/png' %>
     <%= favicon_link_tag 'apple-touch-icon-76.jpg', :rel => 'apple-touch-icon', :sizes => '76x76', :type => 'image/png' %>
@@ -11,7 +11,7 @@
     <%= favicon_link_tag 'apple-touch-icon-152.jpg', :rel => 'apple-touch-icon', :sizes => '152x152', :type => 'image/png' %>
     <%= favicon_link_tag 'apple-touch-icon.jpg', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
 
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Atbp" %>">
+    <meta name="description" content="Easily stay up to date on when and where the Birmingham Barons are playing!">
     <%= stylesheet_link_tag "application", media: "all" %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag "vendor/modernizr" %>
