@@ -33,11 +33,11 @@ Game.create(id: 24, date: "4/26", time: "615PM", opponent: "Chattanooga", away: 
 Game.create(id: 25, date: "4/27", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
 Game.create(id: 26, date: "4/28", time: "615PM", opponent: "Chattanooga", away: true, event: nil)
 
-Game.create(id: 27, date: "4/30", time: "705PM", opponent: "Mobile", away: false, event: nil)
-Game.create(id: 28, date: "5/01", time: "705PM", opponent: "Mobile", away: false, event: "thirsty thursday")
+Game.create(id: 27, date: "4/30", time: "705PM", opponent: "Mobile", away: false, event: "aaa wednesdays")
+Game.create(id: 28, date: "5/01", time: "705PM", opponent: "Mobile", away: false, event: "mardi gras in may crawfish boil")
 Game.create(id: 29, date: "5/02", time: "705PM", opponent: "Mobile", away: false, event: "friday night fireworks")
-Game.create(id: 30, date: "5/03", time: "630PM", opponent: "Mobile", away: false, event: nil)
-Game.create(id: 31, date: "5/04", time: "300PM", opponent: "Mobile", away: false, event: nil)
+Game.create(id: 30, date: "5/03", time: "630PM", opponent: "Mobile", away: false, event: "kids t-shirt giveaway")
+Game.create(id: 31, date: "5/04", time: "300PM", opponent: "Mobile", away: false, event: "salute to armed forces")
 
 Game.create(id: 32, date: "5/05", time: "615PM", opponent: "Tennessee", away: true, event: nil)
 Game.create(id: 33, date: "5/06", time: "1100AM", opponent: "Tennessee", away: true, event: nil)
