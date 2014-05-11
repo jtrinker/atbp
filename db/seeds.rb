@@ -46,10 +46,10 @@ Game.create(id: 35, date: "5/08", time: "615PM", opponent: "Tennessee", away: tr
 Game.create(id: 36, date: "5/09", time: "615PM", opponent: "Tennessee", away: true, event: nil)
 
 Game.create(id: 37, date: "5/10", time: "630PM", opponent: "Pensacola", away: false, event: nil)
-Game.create(id: 38, date: "5/11", time: "300PM", opponent: "Pensacola", away: false, event: nil)
-Game.create(id: 39, date: "5/12", time: "1130AM", opponent: "Pensacola", away: false, event: nil)
-Game.create(id: 40, date: "5/13", time: "705PM", opponent: "Pensacola", away: false, event: nil)
-Game.create(id: 41, date: "5/14", time: "1100AM", opponent: "Pensacola", away: false, event: nil)
+Game.create(id: 38, date: "5/11", time: "300PM", opponent: "Pensacola", away: false, event: "mother's day rose giveaway")
+Game.create(id: 39, date: "5/12", time: "1130AM", opponent: "Pensacola", away: false, event: "yp monday")
+Game.create(id: 40, date: "5/13", time: "705PM", opponent: "Pensacola", away: false, event: "50 cent hotdogs")
+Game.create(id: 41, date: "5/14", time: "1100AM", opponent: "Pensacola", away: false, event: "aaa wednesdays")
 
 Game.create(id: 42, date: "5/15", time: "630PM", opponent: "Huntsville", away: true, event: nil)
 Game.create(id: 43, date: "5/16", time: "630PM", opponent: "Huntsville", away: true, event: nil)
