@@ -75,6 +75,12 @@ Game.create(id: 59, date: "6/02", time: "615PM", opponent: "Tennessee", away: tr
 Game.create(id: 60, date: "6/03", time: "615PM", opponent: "Tennessee", away: true, event: nil)
 Game.create(id: 61, date: "6/04", time: "1100AM", opponent: "Tennessee", away: true, event: nil)
 
+Game.create(id: 62, date: "6/05", time: "705PM", opponent: "Jackson", away: false, event: nil)
+Game.create(id: 63, date: "6/06", time: "705PM", opponent: "Jackson", away: false, event: nil)
+Game.create(id: 64, date: "6/07", time: "630PM", opponent: "Jackson", away: false, event: nil)
+Game.create(id: 65, date: "6/08", time: "300PM", opponent: "Jackson", away: false, event: nil)
+Game.create(id: 66, date: "6/09", time: "1130AM", opponent: "Jackson", away: false, event: nil)
+
 Phrase.destroy_all
 
 Phrase.create(id: 1, line: "nothin' fancy. just sports")
