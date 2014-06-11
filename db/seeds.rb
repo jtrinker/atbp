@@ -81,6 +81,18 @@ Game.create(id: 64, date: "6/07", time: "630PM", opponent: "Jackson", away: fals
 Game.create(id: 65, date: "6/08", time: "300PM", opponent: "Jackson", away: false, event: nil)
 Game.create(id: 66, date: "6/09", time: "1130AM", opponent: "Jackson", away: false, event: nil)
 
+Game.create(id: 67, date: "6/11", time: "705PM", opponent: "Montgomery", away: false, event: "rally towel giveaway")
+Game.create(id: 68, date: "6/12", time: "705PM", opponent: "Montgomery", away: false, event: "thirsty thursday")
+Game.create(id: 69, date: "6/13", time: "705PM", opponent: "Montgomery", away: false, event: "friday night fireworks")
+Game.create(id: 70, date: "6/14", time: "630PM", opponent: "Montgomery", away: false, event: "grill giveaway")
+Game.create(id: 71, date: "6/15", time: "300PM", opponent: "Montgomery", away: false, event: "father's day")
+
+Game.create(id: 72, date: "6/19", time: "605PM", opponent: "Jacksonville", away: true, event: nil)
+Game.create(id: 73, date: "6/20", time: "605PM", opponent: "Jacksonville", away: true, event: nil)
+Game.create(id: 74, date: "6/21", time: "605PM", opponent: "Jacksonville", away: true, event: nil)
+Game.create(id: 75, date: "6/22", time: "205PM", opponent: "Jacksonville", away: true, event: nil)
+Game.create(id: 76, date: "6/23", time: "1105AM", opponent: "Jacksonville", away: true, event: nil)
+
 Phrase.destroy_all
 
 Phrase.create(id: 1, line: "nothin' fancy. just sports")
