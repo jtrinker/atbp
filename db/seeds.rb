@@ -93,6 +93,12 @@ Game.create(id: 74, date: "6/21", time: "605PM", opponent: "Jacksonville", away:
 Game.create(id: 75, date: "6/22", time: "205PM", opponent: "Jacksonville", away: true, event: nil)
 Game.create(id: 76, date: "6/23", time: "1105AM", opponent: "Jacksonville", away: true, event: nil)
 
+Game.create(id: 77, date: "6/24", time: "705PM", opponent: "Mississippi", away: false, event: "50 cent hotdogs")
+Game.create(id: 78, date: "6/25", time: "1230PM", opponent: "Mississippi", away: false, event: "rickwood classic")
+Game.create(id: 79, date: "6/26", time: "705PM", opponent: "Mississippi", away: false, event: "thirsty thursday")
+Game.create(id: 80, date: "6/27", time: "705PM", opponent: "Mississippi", away: false, event: "friday fireworks")
+Game.create(id: 81, date: "6/28", time: "630PM", opponent: "Mississippi", away: false, event: "diamond dig")
+
 Phrase.destroy_all
 
 Phrase.create(id: 1, line: "nothin' fancy. just sports")
