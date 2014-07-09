@@ -111,6 +111,18 @@ Game.create(id: 89, date: "7/06", time: "300PM", opponent: "Tennessee", away: fa
 Game.create(id: 90, date: "7/07", time: "705PM", opponent: "Tennessee", away: false, event: "yp monday")
 Game.create(id: 91, date: "7/08", time: "705PM", opponent: "Tennessee", away: false, event: "50 cent hotdogs")
 
+Game.create(id: 92, date: "7/10", time: "705PM", opponent: "Jackson", away: true, event: nil)
+Game.create(id: 93, date: "7/11", time: "705PM", opponent: "Jackson", away: true, event: nil)
+Game.create(id: 94, date: "7/12", time: "605PM", opponent: "Jackson", away: true, event: nil)
+Game.create(id: 95, date: "7/13", time: "605PM", opponent: "Jackson", away: true, event: nil)
+Game.create(id: 96, date: "7/14", time: "705PM", opponent: "Jackson", away: true, event: nil)
+
+Game.create(id: 97, date: "7/16", time: "705PM", opponent: "Mississippi", away: false, event: "aaa wednesday")
+Game.create(id: 98, date: "7/17", time: "705PM", opponent: "Mississippi", away: false, event: "thirsty thursday")
+Game.create(id: 99, date: "7/18", time: "705PM", opponent: "Mississippi", away: false, event: "friday night fireworks")
+Game.create(id: 100, date: "7/19", time: "630PM", opponent: "Mississippi", away: false, event: "kids jersey giveaway")
+Game.create(id: 101, date: "7/20", time: "300PM", opponent: "Mississippi", away: false, event: "armed forces sunday")
+
 Phrase.destroy_all
 
 Phrase.create(id: 1, line: "nothin' fancy. just sports")
