@@ -157,6 +157,15 @@ Game.create(id: 126, date: "8/19", time: "705PM", opponent: "Chattanooga", away:
 Game.create(id: 127, date: "8/20", time: "705PM", opponent: "Chattanooga", away: false, event: "aaa wednesday")
 Game.create(id: 128, date: "8/21", time: "705PM", opponent: "Chattanooga", away: false, event: "thirsty thursday")
 
+Game.create(id: 129, date: "8/25", time: "700PM", opponent: "Mississippi", away: true, event: nil)
+Game.create(id: 130, date: "8/26", time: "700PM", opponent: "Mississippi", away: true, event: nil)
+
+Game.create(id: 131, date: "8/28", time: "705PM", opponent: "Pensacola", away: false, event: "thirsty thursday")
+Game.create(id: 132, date: "8/29", time: "705PM", opponent: "Pensacola", away: false, event: "friday night fireworks")
+Game.create(id: 133, date: "8/30", time: "630PM", opponent: "Pensacola", away: false, event: "grill giveaway")
+Game.create(id: 134, date: "8/31", time: "300PM", opponent: "Pensacola", away: false, event: "it's been fun")
+Game.create(id: 135, date: "9/01", time: "1230PM", opponent: "Pensacola", away: false, event: "that's all folks!")
+
 Phrase.destroy_all
 
 Phrase.create(id: 1, line: "nothin' fancy. just sports")
