@@ -9,11 +9,10 @@ Bundler.require(*Rails.groups)
 module Atbp
   class Application < Rails::Application
   	config.time_zone = 'Central Time (US & Canada)'
-  end
-end
-
- # config/application.rb
+  	 # config/application.rb
  config.assets.precompile += [
  '/stylesheets/fonts', '/images'
  ]
+  end
+end
 
