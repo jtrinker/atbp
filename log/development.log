@@ -32432,3 +32432,295 @@ Started GET "/assets/atbp-social03@2x.png" for 127.0.0.1 at 2016-09-07 20:07:01 
 
 
 Started GET "/assets/atbp-social02@2x.png" for 127.0.0.1 at 2016-09-07 20:07:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+Processing by GamesController#index as HTML
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/trinkerj/atbp/app/controllers/games_controller.rb:7)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games" WHERE (date > '2016-09-08 01:11:29.006784')
+  [1m[36mPhrase Load (0.1ms)[0m  [1mSELECT "phrases".* FROM "phrases"[0m
+  [1m[35mCountdownPhrase Load (1.4ms)[0m  SELECT "countdown_phrases".* FROM "countdown_phrases"
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_yes_or_no.html.erb (1.0ms)
+  Rendered games/_event_or_phrase.html.erb (0.7ms)
+  Rendered games/_social_event_split.html.erb (3.9ms)
+  Rendered games/_schedule.html.erb (0.4ms)
+  Rendered games/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/ATBP_FINAL.svg" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social01.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social02.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social03.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social04.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/gifs/9.gif" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.ttf" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-main-bg.jpg" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started HEAD "/assets/atbp-social01@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started HEAD "/assets/ATBP_FINAL@2x.svg" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+ActionController::RoutingError (No route matches [HEAD] "/assets/ATBP_FINAL@2x.svg"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.2ms)
+
+
+Started HEAD "/assets/atbp-social02@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started HEAD "/assets/atbp-social04@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started HEAD "/assets/gifs/9@2x.gif" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+ActionController::RoutingError (No route matches [HEAD] "/assets/gifs/9@2x.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.3ms)
+
+
+Started HEAD "/assets/atbp-social03@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social01@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social02@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social04@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/assets/atbp-social03@2x.png" for 127.0.0.1 at 2016-09-07 21:11:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+Processing by GamesController#index as HTML
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/trinkerj/atbp/app/controllers/games_controller.rb:7)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games" WHERE (date > '2016-09-08 01:11:31.335679')
+  [1m[36mPhrase Load (0.1ms)[0m  [1mSELECT "phrases".* FROM "phrases"[0m
+  [1m[35mCountdownPhrase Load (0.1ms)[0m  SELECT "countdown_phrases".* FROM "countdown_phrases"
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_yes_or_no.html.erb (0.8ms)
+  Rendered games/_event_or_phrase.html.erb (0.3ms)
+  Rendered games/_social_event_split.html.erb (1.7ms)
+  Rendered games/_schedule.html.erb (0.5ms)
+  Rendered games/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/ATBP_FINAL.svg" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social01.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social02.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social03.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social04.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/gifs/2.gif" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-main-bg.jpg" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/fonts/hamilton_wood_type_foundry_-_hwtunitgothic-720-webfont.ttf" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/fonts/hamilton_wood_type_foundry_-_hwtunitgothic-719-webfont.ttf" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started HEAD "/assets/ATBP_FINAL@2x.svg" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+ActionController::RoutingError (No route matches [HEAD] "/assets/ATBP_FINAL@2x.svg"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.3ms)
+
+
+Started HEAD "/assets/atbp-social02@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started HEAD "/assets/atbp-social04@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started HEAD "/assets/gifs/2@2x.gif" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+ActionController::RoutingError (No route matches [HEAD] "/assets/gifs/2@2x.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/trinkerj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (48.4ms)
+
+
+Started HEAD "/assets/atbp-social01@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started HEAD "/assets/atbp-social03@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social02@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social04@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social01@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
+
+
+Started GET "/assets/atbp-social03@2x.png" for 127.0.0.1 at 2016-09-07 21:11:31 -0400
