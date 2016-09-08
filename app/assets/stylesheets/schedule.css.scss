@@ -4,6 +4,7 @@ $gray: #25302d;
 
 .schedule-subgrid {
 	font-size: 1.9rem;
+	padding-bottom: 7px;
 }
 
 .schedule-subgrid li {
@@ -16,6 +17,9 @@ $gray: #25302d;
 
 .middlelist {
 	text-align: left;
+	white-space: nowrap; 
+	margin-left: -33px; 
+	padding-bottom: 7px;
 }
 
 .schedule-section {
@@ -52,6 +56,9 @@ $gray: #25302d;
 	max-width: 400px;
 	margin: 0 auto;
 	letter-spacing: 1px;
+	li {
+		padding-bottom: 7px;
+	}
 }
 
 .date {

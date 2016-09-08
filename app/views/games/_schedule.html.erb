@@ -1,30 +1,28 @@
-<div class="schedule-section large-12 columns" height="100%">
+<div class="schedule-section large-12 columns">
 	<div class="row container">
 			<div class="medium-9 medium-centered large-11 large-centered columns">
 					<h3 class="schedule-header"><span class="star">&#9733;</span> schedule <span class="star">&#9733;</span></h3>
 					<ul class="small-block-grid-1 schedule-ul">
 						<% schedule.each do |game| %>
-						<li style="padding-bottom: 7px;">
+						<li>
+						 	<div class="small-4 columns schedule-subgrid">
+									<span class="date"><%= game.date.strftime("%_m/%d")[1..-1] %></span>
+							</div>
 
-								 	<div class="small-4 columns schedule-subgrid" style="padding-bottom: 7px;">
-											<span class="date"><%= game.date.strftime("%_m/%d")[1..-1] %></span>
-									</div>
+							<div class="small-4 columns schedule-subgrid middlelist">
+									<span class="venue"><% if game.away %>
+															at
+														<% else %>
+															vs
+														<% end %>
+									</span>
+									
+									<span class="opponent"><%= game.opponent %></span>
+							</div>
 
-									<div class="small-4 columns schedule-subgrid middlelist" style="white-space: nowrap; margin-left: -33px; padding-bottom: 7px;">
-											<span class="venue"><% if game.away %>
-																	at
-																<% else %>
-																	vs
-																<% end %>
-											</span>
-											
-											<span class="opponent"><%= game.opponent %></span>
-									</div>
-
-									<div class="small-4 columns schedule-subgrid" style="">
-											<span class="time"><%= game.time %></span>
-									</div>
-							
+							<div class="small-4 columns schedule-subgrid">
+									<span class="time"><%= game.time %></span>
+							</div>
 						</li>
 						<% end %>
 					</ul>
