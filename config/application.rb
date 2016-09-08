@@ -12,3 +12,8 @@ module Atbp
   end
 end
 
+ # config/application.rb
+ config.assets.precompile += [
+ '/stylesheets/fonts', '/images'
+ ]
+
