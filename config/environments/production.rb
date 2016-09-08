@@ -22,9 +22,14 @@ Atbp::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  # config.serve_static_assets = true
-  # config.assets.compile = true
-  # config.assets.digest = true
+  Atbp::Application.configure do
+    
+   # your config settings
+
+   config.assets.compile = true
+ 
+   # your other config settings
+  end
 
 
   # Compress JavaScripts and CSS.
