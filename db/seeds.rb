@@ -2,11 +2,11 @@ Game.destroy_all
 
 puts "Seeding data..."
 # Game Data
-Game.create(date: Date.new(2015, 4, 9), time: "705PM", opponent: "Mobile", away: false, event: "opening night!")
-Game.create(date: Date.new(2015, 4, 10), time: "705PM", opponent: "Mobile", away: false, event: nil)
-Game.create(date: Date.new(2015, 4, 11), time: "630PM", opponent: "Mobile", away: false, event: nil)
-Game.create(date: Date.new(2015, 4, 12), time: "300PM", opponent: "Mobile", away: false, event: nil)
-Game.create(date: Date.new(2015, 4, 13), time: "1130AM", opponent: "Mobile", away: false, event: nil)
+Game.create(date: Date.new(2017, 9, 7), time: "705PM", opponent: "Mobile", away: false, event: "opening night!")
+Game.create(date: Date.new(2017, 9, 10), time: "705PM", opponent: "Mobile", away: false, event: nil)
+Game.create(date: Date.new(2017, 9, 11), time: "630PM", opponent: "Mobile", away: false, event: nil)
+Game.create(date: Date.new(2017, 9, 12), time: "300PM", opponent: "Mobile", away: false, event: nil)
+Game.create(date: Date.new(2017, 9, 13), time: "1130AM", opponent: "Mobile", away: false, event: nil)
 
 Phrase.destroy_all
 
